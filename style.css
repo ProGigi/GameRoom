@@ -1,0 +1,366 @@
+/* Color Theme Swatches in Hex .UI/UX-1-hex {
+    color: #A6A6A6;
+}
+
+.UI/UX-2-hex {
+    color: #707316;
+}
+
+.UI/UX-3-hex {
+    color: #D5D95F;
+}
+
+.UI/UX-4-hex {
+    color: #F2B66D;
+}
+
+.UI/UX-5-hex {
+    color: #0D0D0D;
+} */
+
+
+
+/*
+Color Theme Swatches in RGBA 
+.UI/UX-1-rgba { color: rgba(165, 165, 165, 1); }
+.UI/UX-2-rgba { color: rgba(111, 114, 21, 1); }
+.UI/UX-3-rgba { color: rgba(212, 216, 95, 1); }
+.UI/UX-4-rgba { color: rgba(242, 182, 109, 1); }
+.UI/UX-5-rgba { color: rgba(12, 12, 12, 1); }
+
+Color Theme Swatches in HSLA 
+.UI/UX-1-hsla { color: hsla(0, 0, 65, 1); }
+.UI/UX-2-hsla { color: hsla(61, 68, 26, 1); }
+.UI/UX-3-hsla { color: hsla(61, 61, 61, 1); }
+.UI/UX-4-hsla { color: hsla(33, 83, 68, 1); }
+.UI/UX-5-hsla { color: hsla(0, 0, 5, 1); }
+*/
+html {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0D0D0D;
+    color: #A6A6A6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    font-family: 'Macondo',
+        cursive;
+    ;
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 5px;
+    border-bottom: #707316 2px solid;
+    padding-bottom: 5px;
+}
+
+
+
+/* nav */
+nav {
+    width: 100%;
+    font-size: 1.7rem;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+nav ul li {
+    list-style: none;
+    text-align: center;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #A6A6A6;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+nav ul li a span {
+    align-self: center;
+}
+
+/* search */
+
+div.search {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+div.search>* {
+    display: block;
+    width: 80%;
+    margin: auto;
+    font-size: 1.7rem;
+}
+
+div.search input.subSearch {
+    background-color: transparent;
+    color: #A6A6A6;
+    border: #707316 solid 2px;
+    max-width: 50%;
+    margin-left: 10px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+div.search input#search {
+    border: 0px;
+    padding: 4px 15px;
+}
+
+div.search label {
+    display: flex;
+    justify-content: right;
+}
+
+
+
+
+
+/* artykułu */
+
+
+ /* sort */
+
+
+ article.sort{
+    text-align: center;
+}
+article.sort div.sort{
+      width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+article.sort span{
+    font-size: 1.7rem;
+}
+
+article.sort div.filters{
+    display: grid;
+    background-color: #707316;
+    font-size: 1.7rem;
+    width: 60%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas: "categories gamers" "search search";
+    justify-content: center;
+    transform: translateY(-100%) scale(0);
+}
+article.sort div.filters.active{
+    transform: translateY(0) scale(1);
+    transition: 0.5s linear;
+}
+article.sort div.filters div.categories{
+    grid-area: categories;
+}
+article.sort div.filters div.gamers{
+    grid-area: gamers;
+}
+article.sort div.filters div.filtersButton{
+    grid-area: search;
+}
+
+/* game */
+article.game {
+    display: grid;
+    border-bottom: #707316 solid 1px;
+    padding: 15px 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header header"
+        "img info"
+        "img info";
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+article.game div.titleGeme {
+    grid-area: header;
+    
+}
+article.game form{
+    grid-area: info;
+    align-self: center;
+}
+
+article.game div h1{
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+article.game div {
+    grid-area: img;
+    text-align: center;
+}
+
+
+
+article.game img {
+    width: 80%;
+    height: 100%;
+}
+
+article.game div.img {
+
+    width: 100%;
+    height: 100%;
+}
+
+article.game div.img1 {
+    width: 100%;
+    height: 100%;
+}
+
+article.game div.img2 {
+    width: 100%;
+    height: 100%;
+}
+
+article.game h3 {
+    font-size: 2.5rem;
+
+}
+
+
+article.game select{
+    display: block;
+    width: 50%;
+    margin: 15px auto;
+    font-size: 1.7rem;
+    border: 0px;
+    padding: 4px 15px;
+}
+
+
+
+/* index */
+article.index{
+    margin: 10px;
+    padding: 30px;
+    border-bottom: #707316 2px solid;
+    text-align: center;
+}
+article.index h1{
+    font-size: 5rem;
+    margin: 20px;
+}
+article.index label{
+    display: block;
+    font-size: 2.5rem;
+    margin: 15px;
+}
+article.index input{
+    display: block;
+width: 50%;
+margin: 15px auto;
+font-size: 1.7rem;
+border: 0px;
+padding: 4px 15px;
+
+}
+
+
+
+
+
+
+/* footer */
+
+footer {
+
+    background-color: #707316;
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #A6A6A6;
+
+}
+
+
+
+/* button */
+article button, article input, div.search input.subSearch, article.sort select{
+    background-color: transparent;
+    color: #A6A6A6;
+    border: #707316 solid 2px;
+    max-width: 50%;
+    padding: 2px;
+    border-radius: 5px;
+    transition: .5s linear;
+    font-size: 1.7rem;
+}
+/* button index */
+article.index input.submit{
+    width: 30%;
+   border: #707316 solid 2px;
+   
+}
+article.index input{
+       border-bottom: #707316 solid 2px;
+}
+/* button game  */
+article.game input{
+    width: 40%;
+    font-size: 2.5rem;
+}
+article.sort button, article.sort select{
+    width: 45%;    
+}
+
+article.sort div.filters input.button{
+    border-color: #0D0D0D;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hover */
+article button:hover, article input:hover, div.search input.subSearch:hover, article.sort select:hover {
+    background-color: #707316;    
+}
+
+article.sort div.filters input.button:hover{
+    background-color: #0D0D0D;
+}
+
+
+/* class js */
+
+
+

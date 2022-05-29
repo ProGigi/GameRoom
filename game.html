@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">GR game room</div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">
+                        <span class="material-symbols-outlined icon">
+                            home
+                        </span>
+                        <span class="list"> Strona Główna</span>
+                    </a>
+                </li>
+                <li><a href="game.html">
+                        <span class="material-symbols-outlined icon">
+                            extension
+                        </span>
+                        <span class="list">Gry</span>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <span class="material-symbols-outlined">
+                            person
+                        </span><span class="list">Profil</span>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <span class="material-symbols-outlined icon">
+                            meeting_room
+                        </span>
+                        <span class="list">Pokoje</span>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <span class="material-symbols-outlined icon">
+                            login
+                        </span>
+                        <span class="list"> Zaloguj</span>
+                    </a>
+
+                </li>
+                <li><a href="#">
+                        <span class="material-symbols-outlined">
+                            logout
+                        </span>
+                        <span class="list">Wyloguj</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="search">
+            <label for="search">Czego szukasz ziomeczku?</label>
+            <input type="text" name="search" placeholder="search" id="search">
+            <input type="submit" value="wyszukaj" class="subSearch">
+        </div>
+        <main>
+
+            <article class="sort">
+                <div class="sort">
+                    <button id="buttonFilters"><span class="material-symbols-outlined">
+                            filter_alt
+                        </span>
+                        Filter
+                    </button>
+                    <select name="sort" id="">
+                        <option value="Sortuj" selected disabled>Sortowanie</option>
+                        <option value="Nazwa A-Z">Nazwa A-Z</option>
+                        <option value="Nazwa Z-A">Nazwa Z-A</option>
+                        <option value="pokoje">Ilości aktywnych pokoi</option>
+                        <option value="gracze">Ilości aktywnych graczy</option>
+                    </select>
+                </div>
+                <form action="" method="get">
+                    <div class="filters" id="divFilters">
+                        <div class="categories">
+                            <legend>Kategoria</legend>
+                            <input type="radio" name="categories" id="strategiczne">
+                            <label for="strategiczne">strategiczne</label>
+                            <input type="radio" name="categories" id="RPG">
+                            <label for="RPG">RPG</label>
+                            <input type="radio" name="categories" id="sportowe">
+                            <label for="sportowe">sportowe</label>
+                        </div>
+                        <div class="gamers">
+                            <legend>Liczba graczy w pokoju</legend>
+                            <input type="radio" name="gamers" id="1-5">
+                            <label for="1-5">1-5</label>
+                            <input type="radio" name="gamers" id="6-10">
+                            <label for="6-10">6-11</label>
+                            <input type="radio" name="gamers" id="10-999">
+                            <label for="10-999">10-999</label>
+                        </div>
+                        <div class="filtersButton">
+                            <input type="submit" class="button" value="szukaj">
+                        </div>
+                    </div>
+                </form>
+            </article>
+            <article class="game">
+                <div class="titleGeme">
+                    <h1>Heroes IV</h1>
+                    <h2>(strategia)</h2>
+                </div>
+                <div class="img"><img src="img/heroes4.webp" alt=""></div>
+                <form action="#" method="get">
+                    <h3>Język pokoju</h3>
+                    <select name="language" id="">
+                        <option value="polski">polski</option>
+                        <option value="angielski">angielski</option>
+                        <option value="hiszpanski">hiszpanski</option>
+                        <option value="klingonski">klingonski</option>
+                    </select>
+                    <h3>Poziom trudności</h3>
+                    <select name="level" id="">
+                        <option value="Wy">Wy</option>
+                        <option value="pier">pier</option>
+                        <option value="da">da</option>
+                        <option value="laj">laj</option>
+                    </select>
+                    <h3>ilości graczy</h3>
+                    <select name="geamers" id="">
+                        <option value="dwa">2</option>
+                        <option value="jeden">1</option>
+                        <option value="trzy">3</option>
+                        <option value="osiem">8</option>
+                    </select>
+
+                    <input type="submit" value="Szukaj">
+                </form>
+            </article>
+            <article class="game">
+                <div class="titleGeme">
+                    <h1>Europa Universalis III</h1>
+                    <h2>(strategia)</h2>
+                </div>
+                <div class="img1"><img src="img/europa universalis 3.jpg" alt=""></div>
+                <form action="#" method="get">
+                    <h3>Język pokoju</h3>
+                    <select name="language" id="">
+                        <option value="polski">polski</option>
+                        <option value="angielski">angielski</option>
+                        <option value="hiszpanski">hiszpanski</option>
+                        <option value="klingonski">klingonski</option>
+                    </select>
+                    <h3>Poziom trudności</h3>
+                    <select name="level" id="">
+                        <option value="Wy">Wy</option>
+                        <option value="pier">pier</option>
+                        <option value="da">da</option>
+                        <option value="laj">laj</option>
+                    </select>
+                    <h3>ilości graczy</h3>
+                    <select name="geamers" id="">
+                        <option value="dwa">2</option>
+                        <option value="jeden">1</option>
+                        <option value="trzy">3</option>
+                        <option value="osiem">8</option>
+                    </select>
+
+                    <input type="submit" value="Szukaj">
+                </form>
+
+            </article>
+            <article class="game">
+                <div class="titleGeme">
+                    <h1>Dungeons & Dragons </h1>
+                    <h2>(strategia)</h2>
+                </div>
+                <div class="img2"><img src="img/D&D.jpg" alt=""></div>
+                <form action="#" method="get">
+                    <h3>Język pokoju</h3>
+                    <select name="language" id="">
+                        <option value="polski">polski</option>
+                        <option value="angielski">angielski</option>
+                        <option value="hiszpanski">hiszpanski</option>
+                        <option value="klingonski">klingonski</option>
+                    </select>
+                    <h3>Poziom trudności</h3>
+                    <select name="level" id="">
+                        <option value="Wy">Wy</option>
+                        <option value="pier">pier</option>
+                        <option value="da">da</option>
+                        <option value="laj">laj</option>
+                    </select>
+                    <h3>ilości graczy</h3>
+                    <select name="geamers" id="">
+                        <option value="dwa">2</option>
+                        <option value="jeden">1</option>
+                        <option value="trzy">3</option>
+                        <option value="osiem">8</option>
+                    </select>
+
+                    <input type="submit" value="Szukaj">
+                </form>
+            </article>
+        </main>
+        <footer>
+            <p class="footer">Could we play?</p>
+        </footer>
+
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
