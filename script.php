@@ -1,4 +1,21 @@
-<!DOCTYPE html>
+<?php
+
+$username = "m1188_gemeRoom";
+$password = "Django0812";
+$localhost = "mysql29.mydevil.net";
+$database = "m1188_game_room";
+
+$connect = @new mysqli($localhost, $username, $password, $database);
+
+
+if ($connect->connect_errno) {
+    echo "Failed to connect to MySQL: " . $connect->connect_error;
+}
+
+
+
+
+$header = '<!DOCTYPE html>
 <html lang="pl">
 
 <head>
@@ -73,37 +90,13 @@
             <label for="search">Czego szukasz ziomeczku?</label>
             <input type="text" name="search" placeholder="search" id="search" placeholder="nr.Pokoju lub Nazwa Pokoju">
             <input type="submit" value="wyszukaj" class="subSearch">
-        </div>
-        <main>
-            <article class="searchRoom index">
-                <h1>Szukasz pokoju???</h1>
-                <label for="searchRoom">Szukaj mnie cierpliwie po nr.pokoju albo po jego nazwie!!!</label>
-                <input type="text" name="searchRoom" id="searchRoom" placeholder="nr.Pokoju lub Nazwa Pokoju">
-                <input type="submit" value="no szukaj" class="searchRoom submit">
-            </article>
-            <article class="createRoom index">
-                <h1>Stwórz swój własny pokój</h1>
-                <input type="button" class="submit" value="Stwórz">
-            </article>
-            <article class="logIn index">
-                <h1>Zaloguj się</h1>
-                <label for="userName">Login</label>
-                <input type="text" class="userName" placeholder="Login">
-                <label for="userPass" class="userPass">password</label>
-                <input type="password" name="userPass" id="">
-                <input type="submit" class="submit" value="zaloguj się">
-                <input type="submit" class="submit" value="zarejestruj">
+        </div>';  
 
-
-            </article>
-        </main>
-        <footer>
-            <p class="footer">Could we play?</p>
-        </footer>
-
-
-
-    </div>
+        
+$footer = '<footer>
+<p class="footer">Could we play?</p>
+</footer>
+</div>
 </body>
 
-</html>
+</html>';
