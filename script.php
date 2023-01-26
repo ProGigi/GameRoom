@@ -5,8 +5,15 @@ $password = "Django0812";
 $localhost = "mysql29.mydevil.net";
 $database = "m1188_game_room";
 
-$connect = @new mysqli($localhost, $username, $password, $database);
+$registerAct = "";
+$logOutAct = "display";
 
+$connect = @new mysqli($localhost, $username, $password, $database);
+session_start();
+if ($_SESSION["login"]==2){
+   $registerAct = "display";
+   $logOutAct = "";
+}
 
 if ($connect->connect_errno) {
     echo "Failed to connect to MySQL: " . $connect->connect_error;
@@ -42,7 +49,7 @@ $header = '<!DOCTYPE html>
         </header>
         <nav>
             <ul>
-                <li><a href="index.html">
+                <li><a href="index.php">
                         <span class="material-symbols-outlined icon">
                             home
                         </span>
@@ -69,7 +76,7 @@ $header = '<!DOCTYPE html>
                         <span class="list">Pokoje</span>
                     </a>
                 </li>
-                <li><a href="#">
+                <li class="'.$registerAct.'" ><a href="register1.php">
                         <span class="material-symbols-outlined icon">
                             login
                         </span>
@@ -77,7 +84,7 @@ $header = '<!DOCTYPE html>
                     </a>
 
                 </li>
-                <li><a href="#">
+                <li class="'.$logOutAct.'" ><a href="logOut.php">
                         <span class="material-symbols-outlined">
                             logout
                         </span>

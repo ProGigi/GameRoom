@@ -65,6 +65,11 @@ header {
 }
 
 
+.display{
+    display: none;
+}
+
+
 
 /* nav */
 nav {
@@ -74,7 +79,7 @@ nav {
 
 nav ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 nav ul li {
@@ -280,13 +285,14 @@ padding: 4px 15px;
 }
 
 /* rejestracja */
+
 .register{
     display: flex;
     width: 100%;
     justify-content: space-between;
     margin: 20px;
 }
-.registerManual{
+.registerManual,.login{
     flex-grow: 1;
     width: 45%;
     display: flex;
@@ -294,7 +300,14 @@ padding: 4px 15px;
     align-items: center;
 
 }
-.registerManual input{
+
+.register form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;   
+}
+.register input{
     width: 100%;
     margin: 15px;
     padding-left: 5px;
@@ -305,10 +318,6 @@ padding: 4px 15px;
     margin: 5px;
 }
 
-.registerFB{
-    flex-grow: 1;
-    width: 45%;
-}
 
 
 

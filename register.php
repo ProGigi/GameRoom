@@ -71,7 +71,7 @@
 			$_SESSION['e_pass']="Podane hasła nie są identyczne!";
 		}	
 
-    $pass_hash = password_hash($pass1, PASSWORD_DEFAULT);
+    $pass_hash = md5($pass1);
 
     // //walidacja regulamin
     // if (!isset($_POST['regulamin']))
