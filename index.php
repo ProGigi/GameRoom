@@ -21,9 +21,9 @@ echo '  <main>
     <input type="text" name="searchRoom" id="searchRoom" placeholder="nr.Pokoju lub Nazwa Pokoju">
     <input type="submit" value="no szukaj" class="searchRoom submit">
 </article>
-<article class="createRoom index '.$rocreateRoomAct.'">
+<article class="createRoom index '.$createRoomAct.'">
     <h1>Stwórz swój własny pokój</h1>
-    <input type="button" class="submit" value="Stwórz">
+    <a href="createRoom.php" class="submit subSearch">Stwórz</a>
 </article>
 <article class="logIn index '.$logInAct.'">
 <form action="login.php" method="post">
