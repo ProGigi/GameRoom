@@ -265,7 +265,7 @@ article.index{
     border-bottom: #707316 2px solid;
     text-align: center;
 }
-article.index h1{
+article h1{
     font-size: 5rem;
     margin: 20px;
 }
@@ -312,13 +312,38 @@ padding: 4px 15px;
     margin: 15px;
     padding-left: 5px;
 }
-.register label{
+.register label, .addRoom label{
     display: block;
     font-size: 1.7rem;
     margin: 5px;
 }
 
+/* dodawanie pokoi */
+form.addRoom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.addRoom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+form.addRoom input{
+    max-width: 100%;
+}
 
+form.addRoom select, form.addRoom textarea{
+    background-color: transparent;
+    color: #A6A6A6;
+border: #707316 solid 2px;
+padding: 2px;
+border-radius: 5px;
+transition: .5s linear;
+font-size: 1.7rem;
+}
 
 
 
@@ -341,7 +366,7 @@ footer p {
 
 
 /* button */
-article button, article input, div.search input.subSearch, article.sort select{
+article button, article input, div.search input.subSearch, article.sort select, a.subSearch{
     background-color: transparent;
     color: #A6A6A6;
     border: #707316 solid 2px;
@@ -352,13 +377,20 @@ article button, article input, div.search input.subSearch, article.sort select{
     font-size: 1.7rem;
 }
 /* button index */
-article.index input.submit{
+article.index input.submit, a.submit{
     width: 30%;
    border: #707316 solid 2px;
    
 }
 article.index input{
        border-bottom: #707316 solid 2px;
+}
+
+a.submit 
+{
+    display: block;
+    text-decoration: none;
+    margin: auto;
 }
 /* button game  */
 article.game input{
@@ -389,7 +421,7 @@ article.sort div.filters input.button{
 
 
 /* hover */
-article button:hover, article input:hover, div.search input.subSearch:hover, article.sort select:hover {
+article button:hover, article input:hover, div.search input.subSearch:hover, article.sort select:hover, a.subSearch:hover {
     background-color: #707316;    
 }
 
@@ -399,6 +431,5 @@ article.sort div.filters input.button:hover{
 
 
 /* class js */
-
 
 
